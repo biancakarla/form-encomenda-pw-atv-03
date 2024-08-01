@@ -1,7 +1,11 @@
-.hidden {
-    display: none;
+.saborMassa3{
+    visibility: visible;
 }
 
-.sabor3{
+.saborRecheio5{
+    visibility: hidden;
+}
+
+.ingrediente-recheio {
     visibility: visible;
 }

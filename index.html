@@ -41,27 +41,77 @@
                 </select>
             </div>
 
-            <fielset>
-                <legend>Selecione o sabor principal</legend>
+            <div class="ingrediente-produto"> 
+                <div class="ingrediente-massa">
+                    <fielset>
+                        <legend>Selecione o sabor da massa:</legend>
+                        <div class="saborMassa1">
+                            <input type="radio" name="saborMassa" id="saborMassa1"/>
+                            <label for="saborMassa1">Chocolate</label>
+                        </div>
+                            
+                        <div class="saborMassa2">
+                            <input type="radio" name="saborMassa" id="saborMassa2"/>
+                            <label for="saborMassa2">Morango</label>
+                        </div>
 
-                <div class="ingrediente-produto">
-                    <div>
-                        <input type="radio" name="sabor" id="sabor1"/>
-                        <label for="sabor1">Chocolate</label>
-                    </div>
-                    
-                    <div>
-                        <input type="radio" name="sabor" id="sabor2"/>
-                        <label for="sabor2">Morango</label>
-                    </div>
+                        <div class="saborMassa3">
+                            <input type="radio" name="saborMassa" id="saborMassa3"/>
+                            <label for="saborMassa3">Baunilha</label>
+                        </div>
 
-                    <div class="sabor3">
-                        <input type="radio" name="sabor" id="sabor3"/>
-                        <label for="sabor3">Leite</label>
-                    </div>
-
+                    </fielset>
                 </div>
-            </fielset>
+
+                <div class="ingrediente-recheio">
+                    <fielset>
+                        <legend>Selecione o sabor do recheio:</legend>
+                        <div class="saborRecheio1">
+                            <input type="radio" name="saborRecheio" id="saborRecheio1"/>
+                            <label for="saborRecheio1">Chocolate</label>
+                        </div>
+                            
+                        <div class="saborRecheio2">
+                            <input type="radio" name="saborRecheio" id="saborRecheio2"/>
+                            <label for="saborRecheio2">Morango</label>
+                        </div>
+
+                        <div class="saborRecheio3">
+                            <input type="radio" name="saborRecheio" id="saborRecheio4"/>
+                            <label for="saborRecheio4">Leite</label>
+                        </div>
+
+                        <div class="saborRecheio5">
+                            <input type="radio" name="saborRecheio" id="saborRecheio5"/>
+                            <label for="saborRecheio5">Cereja</label>
+                        </div>
+
+                    </fielset>
+                </div>
+            </div>
+
+            <div class="preferencias-produto">
+                <fielset>
+                    <legend>Preferências:</legend>
+                    <div class="caracteristica1">
+                        <input type="checkbox" name="caracteristica" id="caracteristica1"/>
+                        <label for="caracteristica1">Sem lactose</label>
+                    </div>
+                            
+                    <div class="caracteristica2">
+                        <input type="checkbox" name="caracteristica" id="caracteristica2"/>
+                        <label for="caracteristica2">Sem glúten</label>
+                    </div>
+
+                    <div class="caracteristica3">
+                        <input type="checkbox" name="caracteristica" id="caracteristica3"/>
+                        <label for="caracteristica3">Vegano</label>
+                    </div>
+
+                    
+                </fielset>
+            </div>
+
 
             <div class="detalhes-produto">
                 <label for="descricao">Descrição:</label>
@@ -69,8 +119,6 @@
                     placeholder="Descreva aqui informações adicionais"
                     cols="50" 
                     rows="5"
-                    onkeypress="catchText()"
-                    minlength="10"
                     maxlength="500"
                 ></textarea>
             </div>
